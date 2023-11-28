@@ -1,0 +1,9 @@
+// // Give a string, reverse each word in sentence...........
+
+let str = "Hello my name is Samiran";
+let words = str.split(" ");
+let savedStr = words.map((elm) => {
+    let w = elm.split('').reverse().join('');
+    return w;
+});
+console.log(savedStr.join(' '));
